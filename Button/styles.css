@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    padding: 20px;
+}
+
+div {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.defaultButton {
+    text-decoration: none;
+    background-color: #20dd87;
+    color: white;
+    padding: 10px 24px;
+    font-size: 2rem;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+
+}
+
+.defaultButton:hover {
+    box-shadow: #148d57 3px 3px 0px;
+    transform: translate(-3px, -3px);
+}
+
