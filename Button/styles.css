@@ -18,12 +18,32 @@ div {
     padding: 10px 24px;
     font-size: 2rem;
     border-radius: 4px;
-    transition: all 0.2s ease 0s;
+    transition: all 0.4s ease-in 0s;
 
 }
 
-.defaultButton:hover {
+.translate:hover {
     box-shadow: #148d57 3px 3px 0px;
     transform: translate(-3px, -3px);
 }
+
+.normal:hover {
+    transform: scale(1.1);
+}
+
+.roundedButton {
+    text-decoration: none;
+    border: #ff0000 solid 2px;
+    color: black;
+    padding: 10px 24px;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition: all 0.2s ease 0s;
+}
+
+.fill:hover {
+    background-color: #ff0000;
+}
+
+
 
