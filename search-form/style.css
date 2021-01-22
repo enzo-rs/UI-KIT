@@ -1,0 +1,39 @@
+.defaultButton {
+    text-decoration: none;
+    background-color: #20dd87;
+    color: white;
+    padding: 6px 24px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+    display: flex;
+}
+
+
+.defaultButton span {
+    margin-left: 10px;
+}
+
+.translate:hover {
+    box-shadow: #148d57 3px 3px 0px;
+    transform: translate(-3px, -3px);
+}
+
+.defaultInputText {
+    border: none;
+    font-size: 20px;
+    height: 30px;
+    padding: 4px 8px;
+    width: 100%;
+    outline: none;
+}
+
+.defaultForm {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #20dd87 solid 2px;
+    padding: 1%;
+    border-radius: 5px;
+} 
