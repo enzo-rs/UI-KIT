@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.circle_small {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #3434349d;
+  margin-left: 10px;
+  background: url("assets/PP_pic.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+nav,
+nav > div {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  margin: 10px;
+  padding: 1%;
+  border-bottom: #d8d8d8 solid 1px;
+}
+
+nav > div {
+  width: 30%;
+  justify-content: flex-end;
+}
+
+nav ul {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  
+}
+
+nav a {
+    text-decoration: none;
+    color: #9b9b9b;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+a:hover {
+    color: #555555;
+}
+
+.fa-bus {
+  font-size: 40px;
+  color: red;
+}
