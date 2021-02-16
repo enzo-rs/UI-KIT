@@ -13,11 +13,11 @@ body {
     font-size: 1.6rem;
 }
 
-form input[type="radio"]:checked {
+form label input[type="radio"]:checked {
   filter: hue-rotate(180deg);
 }
 
-form input[type="radio"] {
+form label input[type="radio"] {
   position: absolute;
   left: -1000px;
 }

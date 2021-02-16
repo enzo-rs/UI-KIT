@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+form article {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.detail-com {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.defaultInput {
+  height: 40px;
+  width: 200px;
+  padding: 0 10px;
+  background: #fff;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+.defaultInput:hover {
+  border: 1px solid #929292;
+}
+
+.defaultInput:hover {
+  color: #929292;
+}
+
+
+.defaultInput:focus {
+  border: 1px solid rgb(0, 174, 255);
+}
+
+input.error {
+  border: 1px solid #f0506e;
+}
+
+input.error:focus {
+  border: 1px solid #f0506e;
+}
+
+label.error {
+  color: #f0506e;
+}
+
+
+
+
+.defaultInput:disabled {
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  user-select: none;
+  cursor: not-allowed;
+}
