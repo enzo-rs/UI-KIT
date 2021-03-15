@@ -1,83 +1,52 @@
+@import "../../base/index.scss";
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
-    height: 600px;
-    position: relative;
+  height: 600px;
+  position: relative;
 
-    img.banner-background{
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-
-
-
-.banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
+  img.banner-background {
     position: absolute;
     top: 0;
-
-    .banner-content {
-        margin: 0 auto;
-
-        h2 {
-            font-size: 2.3rem;
-            margin-bottom: 5px;
-            line-height: 3rem;
-        }
-        
-        p {
-            font-size: 1.3rem;
-            color: #cccccc;
-            margin-bottom: 25px;
-            line-height: 2.5rem;
-        }
-
-
-        div.button {
-            display: flex;
-        
-            .defaultButton {
-                text-decoration: none;
-                background-color: #20dd87;
-                color: white;
-                padding: 10px 24px;
-                font-size: 1.5rem;
-                border-radius: 4px;
-                transition: all 0.2s ease 0s;
-            }
-            .normal {
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-            
-        }
-        
-
-    }
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
 
+  .banner-content {
+    margin: 0 auto;
 
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 5px;
+      line-height: 3rem;
+    }
 
+    p {
+      font-size: 1.3rem;
+      color: #cccccc;
+      margin-bottom: 25px;
+      line-height: 2.5rem;
+    }
 
-
-
-
+    @include button_normal;
+  }
+}
