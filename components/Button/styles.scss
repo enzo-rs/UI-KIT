@@ -1,0 +1,51 @@
+@import "../../base/index.scss";
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 20px;
+}
+
+div {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .defaultButton {
+    @include button;
+  
+  }
+  .translate:hover {
+    @include hover_translate;
+  }
+  .normal:hover {
+    transform: scale(1.1);
+  }
+
+  .minify:hover {
+    transform: scale(0.9);
+    color: rgb(36, 36, 36);
+  }
+}
+
+
+.btn {
+  @include button_diagonal;
+}
+
+.btn-1 {
+  border: 3px solid $button-slide-color;
+  color: $button-slide-color;
+}
+
+.btn-1e {
+  @include button_diagonal_hover;
+}
