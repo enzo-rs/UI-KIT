@@ -63,3 +63,16 @@
     opacity: 1;
   }
 }
+
+@mixin button_normal {
+    div.button {
+        display: flex;
+  
+        .defaultButton {
+          @include button;
+        }
+        .normal:hover {
+          transform: scale(1.1);
+        }
+      }
+}
