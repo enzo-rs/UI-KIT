@@ -7,27 +7,38 @@ div {
   width: 80%;
   margin: 1% auto;
   padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
-  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
 }
+
 div.good {
   border: #20dd87 solid 3px;
 }
+
 div.medium {
   border: #fdc659 solid 3px;
 }
+
 div.bad {
   border: #fc1315 solid 3px;
 }
+
 div .bold {
   font-weight: bold;
 }
+
 div a {
   color: #555555;
 }
-
 /*# sourceMappingURL=styles.css.map */
