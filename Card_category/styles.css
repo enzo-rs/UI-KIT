@@ -1,0 +1,21 @@
+.container {
+  width: 90%;
+  height: 200px;
+  border-radius: 7px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/food_picture.jpg);
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.container p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=styles.css.map */
