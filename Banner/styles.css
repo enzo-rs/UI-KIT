@@ -1,68 +1,50 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .wrapper {
   height: 600px;
   position: relative;
 }
-
 .wrapper img.banner-background {
   position: absolute;
   top: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
 .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   font-family: sans-serif;
   position: absolute;
   top: 0;
 }
-
 .banner .banner-content {
   margin: 0 auto;
 }
-
 .banner .banner-content h2 {
   font-size: 2.3rem;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
   line-height: 3rem;
 }
-
 .banner .banner-content p {
   font-size: 1.3rem;
   color: #cccccc;
   margin-bottom: 25px;
   line-height: 2.5rem;
 }
-
 .banner .banner-content div.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .banner .banner-content div.button .defaultButton {
   text-decoration: none;
   background-color: #20dd87;
@@ -70,12 +52,10 @@
   padding: 10px 24px;
   font-size: 1.5rem;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
-
 .banner .banner-content div.button .normal:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
+
 /*# sourceMappingURL=styles.css.map */
