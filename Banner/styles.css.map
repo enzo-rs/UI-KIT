@@ -5,5 +5,9 @@
         "styles.scss"
     ],
     "names": [],
+<<<<<<< HEAD
     "file": "styles.css" 
+=======
+    "file": "styles.css"
+>>>>>>> 972e457d0896f7aca76a3e04c25d57f2bfdb76da
 }
