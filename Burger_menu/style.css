@@ -87,7 +87,6 @@ body {
 input[type="checkbox"]:checked + .menu-button  {
     transform: rotate(180deg);
     transition: transform .3s ease;
-
 }
 
 input[type="checkbox"]:checked + .menu-button .line:first-child {
