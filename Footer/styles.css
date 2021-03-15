@@ -1,0 +1,26 @@
+footer {
+  background-color: #ececec;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+footer p {
+  color: #888888;
+}
+footer div.icon .icon-item {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #999999;
+}
+footer div.icon a:hover {
+  color: #222222;
+}
+footer div.icon .fab {
+  font-size: 25px;
+  margin-right: 15px;
+  transition: all 0.2s ease 0s;
+}
+
+/*# sourceMappingURL=styles.css.map */
