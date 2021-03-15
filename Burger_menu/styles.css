@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5bc1e8;
+  overflow: hidden;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  display: none;
+}
+
+.line {
+  width: 50%;
+  height: 3px;
+  left: 25%;
+  background: rgba(103, 103, 103, 0.4);
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.line:first-child {
+  /* transform-origin: left; */
+  top: 35%;
+}
+
+.line:nth-child(2) {
+  top: 45%;
+}
+
+.line:last-child {
+  /* transform-origin: left; */
+  top: 55%;
+}
+
+.line:first-child::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+
+.line:nth-child(2)::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.line:last-child::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-delay: 150ms;
+          transition-delay: 150ms;
+}
+
+.menu-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu-button .line::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-button:hover .line::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: white;
+}
+
+input[type="checkbox"]:checked + .menu-button {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+input[type="checkbox"]:checked + .menu-button .line:first-child {
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
+  border-radius: 15px;
+}
+
+input[type="checkbox"]:checked + .menu-button .line:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .menu-button .line:last-child {
+  -webkit-transform: translateY(-11px) rotate(-45deg);
+          transform: translateY(-11px) rotate(-45deg);
+  border-radius: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
